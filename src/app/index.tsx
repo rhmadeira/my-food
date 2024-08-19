@@ -6,6 +6,7 @@ import { Search } from "@/components/search";
 import { Header } from "@/components/header";
 import { Section } from "@/components/Section";
 import { TrendingFoods } from "@/components/trendingFoods";
+import { Restaurants } from "@/components/restaurants";
 
 const statusBarHeight = Constants.statusBarHeight;
 
@@ -34,6 +35,15 @@ export default function Index() {
           onPressButton={() => console.log("clicou no ver mais")}
         />
         <TrendingFoods />
+      </View>
+      <View className="w-full px-4">
+        <Section
+          title="Restaurantes"
+          titleButton="ver mais"
+          size="large"
+          onPressButton={() => console.log("clicou no ver mais")}
+        />
+        <Restaurants />
       </View>
     </ScrollView>
   );
