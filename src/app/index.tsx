@@ -7,6 +7,7 @@ import { Header } from "@/components/header";
 import { Section } from "@/components/Section";
 import { TrendingFoods } from "@/components/trendingFoods";
 import { Restaurants } from "@/components/restaurants";
+import { RestaurantVerticalList } from "@/components/restaurantsVertical";
 
 const statusBarHeight = Constants.statusBarHeight;
 
@@ -38,12 +39,21 @@ export default function Index() {
       </View>
       <View className="w-full px-4">
         <Section
-          title="Restaurantes"
+          title="Famosos no My-Food"
           titleButton="ver mais"
-          size="large"
+          size="medium"
           onPressButton={() => console.log("clicou no ver mais")}
         />
         <Restaurants />
+      </View>
+      <View className="w-full px-4">
+        <Section
+          title="Restaurantes"
+          titleButton="ver mais"
+          size="medium"
+          onPressButton={() => console.log("clicou no ver mais")}
+        />
+        <RestaurantVerticalList />
       </View>
     </ScrollView>
   );
