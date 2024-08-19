@@ -15,7 +15,7 @@ export function Section({ title, titleButton, size, onPressButton }: IProps) {
   };
 
   return (
-    <View className="w-full mt-4 flex flex-row justify-between ">
+    <View className="w-full mt-4 flex flex-row justify-between items-center">
       <Text className={`${textSize[size]} font-semibold my-4 self-start`}>
         {title}
       </Text>
